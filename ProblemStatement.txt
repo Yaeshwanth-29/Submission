@@ -1,4 +1,4 @@
-Problem Statement:
+Problem Statement: User and Account Management System
 
 The User and Account Management System is designed to handle customers, employees, and account operations
 across multiple banks and branches. The system aims to manage the lifecycle of user accounts, enforce
