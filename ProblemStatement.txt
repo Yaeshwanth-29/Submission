@@ -11,6 +11,7 @@ The followings are the problem statements:
 - Accounts to support multiple currencies (including NRI and foreign accounts).
 - Users to delegate account operation rights with limited permissions (Operate Account – Limited).
 - Power of Attorney (POA) and guardianship for minors to manage accounts.
+- Users will have unique username and password.
 - Control and power for roles to the employees and users.
 - Core account operations: deposit, withdrawal (limited), check balance, and closed account (limited).
 
