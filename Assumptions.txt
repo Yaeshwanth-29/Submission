@@ -1,0 +1,25 @@
+Assumptions:
+
+1. A user (customer) can have multiple accounts across different banks and branches.
+2. Each bank can have multiple branches, and each branch belongs to one bank.
+3. Accounts can be of the following types:
+   - Savings Account
+   - Current Account
+   - Term Deposit Account (fixed term, limited operations)
+4. Term Deposits do not allow direct withdrawals; maturity withdrawal only.
+5. Accounts can be operated by:
+   - The account holder (primary user)
+   - A guardian (for minors)
+   - A Power of Attorney (POA) holder
+   - A delegated operator (Operate Account – Limited)
+6. “Operate Account – Limited” means a user has restricted access to another user’s account.
+   - Access levels: ViewOnly, DepositOnly, DepositWithdrawLimited
+7. Users can perform transactions like:
+   - Deposit
+   - Withdrawal (subject to limits)
+   - Balance Check
+   - Account Closure (subject to limits)
+8. All accounts are associated with a branch, account type, and currency.
+9. Employees are associated with specific branches and assigned system roles.
+10. System access for both employees and users.
+11. Every entity includes CreatedDate/ModifiedDate fields for tracking.
