@@ -1,17 +1,18 @@
 {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "firefox": ">60",
-            "opera": ">50",
-            "edge": ">=16",
-            "chrome": ">=60",
-            "safari": ">=10",
-            "ie": "11"
-          }
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "firefox": ">60",
+          "opera": ">50",
+          "edge": ">=16",
+          "chrome": ">=60",
+          "safari": ">=10",
+          "ie": "11"
         }
-      ]
-    ]
-  }
+      }
+    ],
+    "@babel/preset-typescript"
+  ]
+}

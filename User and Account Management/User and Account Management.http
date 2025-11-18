@@ -1,0 +1,6 @@
+@User_and_Account_Management_HostAddress = http://localhost:7294
+
+GET {{User_and_Account_Management_HostAddress}}//
+Accept: application/json
+
+###

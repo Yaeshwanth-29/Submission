@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Date & Time Button</title>
+</head>
+<body>
+
+  <button id="dateTimeButton">Loading...</button>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+
+      let hours = String(now.getHours()).padStart(2, '0');
+      let minutes = String(now.getMinutes()).padStart(2, '0');
+      let seconds = String(now.getSeconds()).padStart(2, '0');
+
+      // Format date
+      const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+      const formattedDate = now.toLocaleDateString(undefined, options);
+
+      // Set button text
+      document.getElementById('dateTimeButton').textContent = `${formattedDate} ${hours}:${minutes}:${seconds}`;
+    }
+
+    // Initial call
+    updateDateTime();
+
+    // Update every second
+    setInterval(updateDateTime, 1000);
+  </script>
+<script>
+    let m = new Map([...'abcd'].map (x=>[x, x+x]));
+JSON.stringify([...m]);
+JSON.stringify([...m.keys()]);
+JSON.stringify([...m.values()]);
+JSON.stringify([...m.entries()]);
+console.log(m);
+</script>
+
+
+</body>
+</html>

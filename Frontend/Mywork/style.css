@@ -147,3 +147,65 @@ footer p{
     margin: 0;
     color: #000;
 }
+.about {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Stack Java and .NET vertically, centered */
+  .tech-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  /* Each tech box */
+  .tech {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9fdd3; /* light green */
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    width: fit-content;    /* 👈 make it compact */
+    max-width: 90%;
+  }
+  
+  /* Category title (java, .net) */
+  .tech .category {
+    color: green;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+  
+  .tech .category::before {
+    content: "*";
+    color: green;
+    margin-right: 6px;
+  }
+  
+  /* Blue flex chips */
+  .tech .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .tech .items li {
+    color: blue;
+    background-color: rgba(0, 0, 255, 0.1);
+    padding: 6px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+  

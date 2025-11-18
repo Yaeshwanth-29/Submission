@@ -3,13 +3,30 @@
   "version": "1.0.0",
   "description": "Project",
   "main": "index.js",
+
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.10.1",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-redux": "^9.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir dist"
+    "build": "tsc && babel src --out-dir dist",
+    "build:development":"webpack --mode development",
+    "build:production": "webpack --mode production",
+    "run-dev":"node./dist/bundle.js"
     
   },
   "author": "Yaeshwanth",
   "license": "ISC",
   "keywords": [],
-  "type": "module"
+  "type": "module",
+  "start": "node dist/index.js"
 }

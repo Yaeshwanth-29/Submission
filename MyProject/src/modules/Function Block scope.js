@@ -11,3 +11,5 @@ try {
   } catch (e) {
     console.error("Example 1 error:", e.message);
   }
+
+  
